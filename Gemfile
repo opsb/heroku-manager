@@ -9,7 +9,7 @@ gem 'sqlite3'
 gem 'nifty-generators', '>= 0.4.0'
 
 group :test do
-  gem 'rspec'
+  gem 'rspec-rails'
   gem 'machinist', '>= 2.0.0.beta2'
 end
 
