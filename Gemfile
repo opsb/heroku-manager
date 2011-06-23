@@ -18,7 +18,8 @@ group :test do
   gem 'machinist', '>= 2.0.0.beta2'
   gem 'sham'
   gem 'faker'
-  gem 'mocha'  
+  gem 'mocha'
+  gem 'shoulda'  
 end
 
 # Use unicorn as the web server

@@ -14,7 +14,6 @@ class AccountsController < ApplicationController
   def create
     @account = Account.new(params[:account])
     if @account.save
-      puts "saving"
       redirect_to @account, :notice => "Successfully created account."
     else
       render :action => 'new'
