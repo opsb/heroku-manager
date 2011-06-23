@@ -16,6 +16,7 @@ module HerokuManager
     # config.autoload_paths += %W(#{config.root}/extras)
     config.generators do |g|
       g.fixture_replacement :machinist
+      g.test_framework  :rspec      
     end
 
     # Only load the plugins named here, in the order given (default is alphabetical).

@@ -7,10 +7,17 @@ gem 'rails', '3.0.6'
 
 gem 'sqlite3'
 gem 'nifty-generators', '>= 0.4.0'
+gem 'rake', '0.8.7'
+
+group :development, :test do    
+  gem 'rspec-rails'
+end
 
 group :test do
-  gem 'rspec-rails'
   gem 'machinist', '>= 2.0.0.beta2'
+  gem 'sham'
+  gem 'faker'
+  gem 'mocha'  
 end
 
 # Use unicorn as the web server
@@ -35,3 +42,4 @@ end
 # group :development, :test do
 #   gem 'webrat'
 # end
+gem "mocha", :group => :test
