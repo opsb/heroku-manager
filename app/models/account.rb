@@ -5,4 +5,8 @@ class Account < ActiveRecord::Base
   def apps
     Heroku::Client.new(email, password).list
   end
+  
+  def destroy_app(app)
+    Heroku::Client.new(email, password).destroy(app)
+  end
 end

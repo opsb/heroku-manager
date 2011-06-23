@@ -2,9 +2,11 @@ require File.dirname(__FILE__) + '/../spec_helper'
 
 describe AccountsController do
   render_views
+  self::APPS = [["twitter", "mark@twitter.com"]]  
 
   before do
     Account.make!
+    Heroku::Client.any_instance.stubs(:list).returns(APPS)
   end
 
   it "index action should render index template" do

@@ -10,3 +10,22 @@
   <%= link_to "Destroy", @account, :confirm => 'Are you sure?', :method => :delete %> |
   <%= link_to "View All", accounts_path %>
 </p>
+
+<table>
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Owner</th>
+			<th>&nbsp;</th>
+		</tr>
+	</thead>
+	<tbody>
+	<% for app in @account.apps %>
+	<tr>
+		<td><%= app[0] %></td>
+		<td><%= app[1] %></td>
+		<td><%= button_to "Delete", account_app_path(@account.id, app[0]), :method => :delete %></td>
+	</tr>
+	<% end %>
+	</tbody>
+</table>

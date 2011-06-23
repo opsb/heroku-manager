@@ -19,6 +19,7 @@ group :test do
   gem 'sham'
   gem 'faker'
   gem 'mocha'
+  gem 'bourne', :git => "http://github.com/thoughtbot/bourne.git"
   gem 'shoulda'  
 end
 
