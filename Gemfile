@@ -1,13 +1,14 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.6'
+ruby '2.0.0'
+gem 'rails', '3.2.9'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
 gem 'nifty-generators', '>= 0.4.0'
-gem 'rake', '0.8.7'
+gem 'rake', '10.1.0'
 gem 'heroku'
 
 group :development, :test do    
